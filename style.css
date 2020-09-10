@@ -92,6 +92,20 @@
   .links a:active {
     color:burlywood;
   }
+
+/* PROJECT LINKS */
+a:link {
+  color: burlywood;
+}
+a:visited {
+  color:  darkolivegreen
+}
+a:hover {
+  color: rgb(35, 78, 35);
+}
+a:active {
+  color:burlywood;
+}
   
   /* SECTION FLEXBOX */
   
