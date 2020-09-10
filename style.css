@@ -1,0 +1,223 @@
+/* Formatting */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: rgb(159, 139, 86);
+    background: linear-gradient(
+      90deg,
+      rgba(159, 139, 86, 1) 47%,
+      rgba(42, 108, 36, 1) 100%
+    );
+    font-family: "Montserrat", sans-serif;
+    color: white;
+  }
+  
+  img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10%;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  footer {
+    background-color: white;
+    color: darkolivegreen;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  
+  /* FORMAT FLEXBOX */
+  
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 2px solid white;
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+  
+  header nav ul li {
+    list-style-type: none;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 20px 0 0;
+    list-style-type: none;
+  }
+  
+  header nav ul li a:hover {
+    color: burlywood;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Contact Me Style */
+  
+  .links ul li {
+    list-style-type: none;
+    padding-right: 5%;
+  }
+  
+  /* LINKS HOVER */
+  .links a:link {
+    color: burlywood;
+  }
+  .links a:visited {
+    color:  darkolivegreen
+  }
+  .links a:hover {
+    color: rgb(35, 78, 35);
+  }
+  .links a:active {
+    color:burlywood;
+  }
+  
+  /* SECTION FLEXBOX */
+  
+  /*    INTRO    */
+  .intro-me {
+    display: flex;
+    flex-direction: row;
+   
+  }
+  
+  .item {
+    flex: 1;
+    margin: 10px;
+    
+  }
+  
+  .item-double {
+    flex: 2;
+    padding-top: 3%;
+  
+  }
+  
+  /*    ABOUT ME    */
+  
+  .about-me {
+    display: flex;
+    flex-direction: row;
+   
+  }
+  
+  .about {
+    flex: 1;
+    margin: 10px;
+    
+  }
+  
+  .about-text {
+    flex: 2;
+    padding-top: 3%;
+   
+  }
+  
+  /*     PROJECTS    */
+  
+  .projects-me {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .project {
+    flex: 1;
+    margin: 10px;
+    border: 5px solid white;
+    padding: 50px;
+  }
+  
+  .contact-me {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .links {
+    text-align: center;
+  }
+  
+  /* CONTACT FORM */
+  
+  form {
+    padding-right: 8px;
+  }
+  
+  form label {
+    display: block;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    background-color: lightgrey;
+  }
+  
+  form textarea {
+    height: 160px;
+    border-radius: 4px;
+  }
+  
+  .form button {
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid whitesmoke;
+    border-radius: 4px;
+    color: forestgreen;
+    display: block;
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  /* desk top */
+  
+  @media all and (min-width: 700px) {
+      section {
+        padding: 0 10%;
+      }
+      p {
+        font-size: 20px;
+      }
+      .group {
+        flex-direction: row;
+      }
+      footer {
+        font-size: 25px;
+      }
+      .projects-me {
+        display: flex;
+        flex-direction: row;
+      }
+  
+      .projects-me h2 {
+        padding-top: 3%;
+      }
+    }
+    
