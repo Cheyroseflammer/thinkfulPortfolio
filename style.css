@@ -201,7 +201,7 @@ a:active {
     background-color: white;
     border: 2px solid whitesmoke;
     border-radius: 4px;
-    color: forestgreen;
+    color: rgb(15, 36, 15);
     display: block;
     font-size: 16px;
     font-weight: bolder;
